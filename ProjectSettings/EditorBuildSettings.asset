@@ -5,22 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Cover Image.unity
-    guid: 4e5554b9ea7f80f48997895a972a7a89
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
-    guid: 4fc98778e7c2cb440abff2355f1cfcce
+    guid: 13638be9c2485b34d9890707ee4a41c5
   - enabled: 1
     path: Assets/Scenes/Hadal Warren.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Tic Tac Toe.unity
+    path: Assets/Scenes/Sweet Games.unity
     guid: 46adbf3c128304d40839d3efa9e67ed1
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/Gatekeeper.unity
+    guid: b4747b171e9807e408c3696f706f84df
+  - enabled: 1
     path: Assets/Scenes/Desert Dig.unity
     guid: c9cad7f2bbe41884cae046d789b87f57
-  - enabled: 0
-    path: Assets/Scenes/Before the End.unity
-    guid: b4747b171e9807e408c3696f706f84df
   m_configObjects: {}

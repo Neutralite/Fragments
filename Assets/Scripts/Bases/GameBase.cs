@@ -32,7 +32,7 @@ public abstract class GameBase : MonoBehaviour
     }
     public void ExitGame()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene(0);
     }
 
 }
