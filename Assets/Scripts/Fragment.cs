@@ -12,6 +12,6 @@ public class Fragment : MonoBehaviour
     }
     void Update()
     {
-        transform.Rotate(0, spinSpeed, 0);
+        transform.Rotate(0, spinSpeed * Time.unscaledDeltaTime, 0);
     }
 }

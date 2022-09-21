@@ -9,6 +9,7 @@ public class FragmentManager : MonoBehaviour
     public GameObject[] fragments;
     public Vector3 originalPos, randomPos;
     public Quaternion originalRot;
+    public bool solidifyFrags;
 
     void Awake()
     {
@@ -49,6 +50,7 @@ public class FragmentManager : MonoBehaviour
 
         fragments[frag].transform.SetPositionAndRotation(new Vector3(1, 1, 4), Quaternion.identity);
 
-        fragments[frag].GetComponentInChildren<MeshRenderer>().material.shader = opaque;
+        if (solidifyFrags)
+            fragments[frag].GetComponentInChildren<MeshRenderer>().material.shader = opaque;
     }
 }

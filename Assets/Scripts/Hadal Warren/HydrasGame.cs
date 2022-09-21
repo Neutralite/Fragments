@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class HydrasGame : GameBase
+public class HydrasGame : GameManagerBase
 {
     public TextMeshProUGUI compassUI, descendUI;
 
@@ -41,7 +41,7 @@ public class HydrasGame : GameBase
             }
 
             // go to next maze level
-            if (Input.GetKeyDown(KeyCode.E) && !paused)
+            if (Input.GetKeyDown(KeyCode.E) && !Paused)
             {
                 startingPosition = exitPosition;
                 Setup();
@@ -54,9 +54,9 @@ public class HydrasGame : GameBase
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            PauseGame();
+            Paused = !Paused;
         }
     }
     void Setup()

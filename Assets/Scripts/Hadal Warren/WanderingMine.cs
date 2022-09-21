@@ -22,7 +22,7 @@ public class WanderingMine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (moving && !game.paused)
+        if (moving && !game.Paused)
         { 
             if (destination.block.transform.position.x - 0.1 < transform.position.x &&
                 transform.position.x < destination.block.transform.position.x + 0.1 &&

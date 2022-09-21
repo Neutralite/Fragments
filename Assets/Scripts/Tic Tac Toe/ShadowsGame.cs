@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ShadowsGame : GameBase
+public class ShadowsGame : GameManagerBase
 {
     public GameObject tokenButton;
     public TextMeshProUGUI turnUI;
@@ -50,10 +50,10 @@ public class ShadowsGame : GameBase
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-            PauseGame();
+        if (Input.GetKeyDown(KeyCode.P))
+            Paused = !Paused;
 
-        if (!paused && !P1Turn && AITurnStarts)
+        if (!Paused && !P1Turn && AITurnStarts)
         {
             AITurnStarts = false;
             Invoke(nameof(AITurn), 1f);

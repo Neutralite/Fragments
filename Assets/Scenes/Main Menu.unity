@@ -828,7 +828,12 @@ MonoBehaviour:
     right button to pause/unpause the game.
 
 '
-  - 
+  - 'Use WASD to move and move the mouse to look around.
+
+    Press the left mouse
+    button to attack.
+
+    Defeat as many enemies as you can.'
   - 
 --- !u!1 &628881682
 GameObject:
@@ -2141,7 +2146,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2751,7 +2756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '-'
+  m_text: Options
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3483,6 +3488,7 @@ MonoBehaviour:
   originalPos: {x: 0, y: 0, z: 0}
   randomPos: {x: 0, y: 0, z: 0}
   originalRot: {x: 0, y: 0, z: 0, w: 0}
+  solidifyFrags: 0
 --- !u!4 &2143165658
 Transform:
   m_ObjectHideFlags: 0

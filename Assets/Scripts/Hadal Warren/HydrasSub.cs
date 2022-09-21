@@ -24,10 +24,10 @@ public class HydrasSub : PlayerBase
     // Update is called once per frame
     void Update()
     {
-        if (!game.paused)
+        if (!game.Paused)
         {
             // perspective toggle
-            if (Input.GetKeyDown(KeyCode.P))
+            if (/*Input.GetKeyDown(KeyCode.P)*/false)
             {
                 if (cam.transform.localPosition == Vector3.zero)
                 {
